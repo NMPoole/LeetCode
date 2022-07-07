@@ -6,7 +6,7 @@ class Solution(object):
         :type s3: str
         :rtype: bool
         """
-        # Solution: O(len1 * len2) time, O(len2) space.
+        # Solution: O(len1 * len2) time, O(len1 * len2) space - space complexity can be made O(len2)!
         len3 = len(s3)
         len1, len2 = len(s1), len(s2)
         
