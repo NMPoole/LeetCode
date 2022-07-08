@@ -7,8 +7,10 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        while n > 0:
+        while n > 0: # While still numbers to intertwine in nums2, iterate backwards across both lists.
             
+            # If no nums left to intertwine from nums1, or curr num2 >= curr num1, use curr num2.
+            # Otherwise, use curr num1. In both cases, update index of array value used from.
             if m <= 0 or nums2[n-1] >= nums1[m-1]:  
                 nums1[m+n-1] = nums2[n-1]
                 n -= 1
