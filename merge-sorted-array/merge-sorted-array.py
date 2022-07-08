@@ -7,6 +7,7 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
+        # Solution: O(n) time, with O(1) space.
         while n > 0: # While still numbers to intertwine in nums2, iterate backwards across both lists.
             
             # If no nums left to intertwine from nums1, or curr num2 >= curr num1, use curr num2.
