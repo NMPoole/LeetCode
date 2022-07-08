@@ -1,0 +1,19 @@
+class Solution(object):
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        # Solution: O(n) time, with O(1) space.
+        #   Iterate all nums, only copying values that are not val.
+        #   i does not increase when val found, so val is overwritten by subsequent numbers.
+        #   i is last index overwritten, and therefore the new length to be considered.
+        i = 0
+        
+        for x in nums:
+            if x != val:
+                nums[i] = x
+                i += 1
+                
+        return i
