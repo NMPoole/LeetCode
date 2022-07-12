@@ -10,6 +10,7 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        # Solution: O(n) time, O(1) additional space.
         if head is None: return head
         
         # Get length of the linked list.
