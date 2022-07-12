@@ -22,6 +22,7 @@ class Solution(object):
             type d: int
             :rtype: bool
             """
+            # Solution: O(4^n) time!
             # Base Case: After having assigned all matchsticks to a side, check if obtained a square.
             if i == n: 
                 return a == b == c == d
