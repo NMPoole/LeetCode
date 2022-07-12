@@ -10,6 +10,8 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        # Solution: O(n) time, O(1) space.
+        
         dummy = output = ListNode(val=-1) # Keep reference to list head.
         currL1 = list1
         currL2 = list2
