@@ -10,6 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
+        # Solution: O(n) time and O(1) additional space.
         tree = [] # Each element of 'tree' should be the node value for each level.
         
         def dfs(node, depth): # Depth-first tree traversal.
