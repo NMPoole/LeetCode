@@ -5,6 +5,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # Solution: O(n) time, O(1) additional space.
+        
         if len(nums) < 2:
             return len(nums)
         
