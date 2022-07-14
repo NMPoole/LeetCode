@@ -12,6 +12,8 @@ class Solution(object):
         :type inorder: List[int]
         :rtype: TreeNode
         """
+        # Solution: O(n) time, O(n) additional space.
+        
         self.preOrderIndex = 0
         
         # Build a hashmap to store value -> index in inorder relations.
