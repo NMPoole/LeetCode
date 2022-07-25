@@ -5,7 +5,6 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
-        
         # Solution: O(n) time, O(1) additional space.
         
         output = ""
